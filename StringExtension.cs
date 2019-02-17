@@ -10,6 +10,14 @@ namespace PadawansTask7
             {
                 throw new ArgumentNullException();
             }
+
+            foreach (var s in array)
+            {
+                if (s == null)
+                {
+                    throw new ArgumentNullException();
+                }
+            }
             for (int i = 0; i < array.Length; i++)
             {
                 for (int j = 0; j < array.Length - i - 1; j++)
